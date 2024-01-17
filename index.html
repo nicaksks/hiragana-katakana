@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Memorize Hiragana e Kanji</title>
+</head>
+<body>
+  <div class="home" id="home">
+    <p>Selecione</p>
+    <div class="btn-container">
+      <button class="btn" type="button" onclick="redirect('Hiragana')">Hiragana</button>
+      <p>ou</p>
+      <button class="btn" type="button" onclick="redirect('Katakana')">Katakana</button>
+    </div>
+  </div>
+  <div class="train" id="train">
+    <div class="question" id="question"></div>
+    <div class="alert-message" id="alert-message"></div>
+    <div class="streak" id="streak"></div>
+    <form>
+      <label id="title"></label><br>
+      <input type="text" id="roumaji" autocomplete="off" required><br><br>
+      <input type="submit" id="submit" class="btnSubmit">
+      <!-- <button type="button" class="btnHome" onclick="redirect('/')">Início</button> -->
+    </form>
+  </div>
+  <script src="./assets/js/index.js"></script>
+</body>
+</html>
