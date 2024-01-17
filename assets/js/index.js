@@ -38,7 +38,6 @@ async function getJson() {
 }
 
 function randomQuestion(type) {
-  database.question = {};
   return Math.floor(type.length * Math.random());
 }
 
