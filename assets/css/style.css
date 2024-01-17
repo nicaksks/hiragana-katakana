@@ -110,3 +110,16 @@ input[type=submit]:hover {
   border-radius: 3px;
   user-select: none;
 }
+
+@media (max-width: 768px) {
+  p {
+    font-size: 20px;
+    text-shadow: none;
+  }
+
+  .btn {
+    font-size: 25px;
+    margin: 20px;
+    text-shadow: none;
+  }
+}
