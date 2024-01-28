@@ -18,10 +18,6 @@ const types = ["hiragana", "katakana"];
 const query = new URLSearchParams(window.location.search);
 const alphabet = query.get("q");
 
-async function redirect(a) {
-  window.location.href = `?q=${a}`;
-}
-
 window.onload = async () => {
 
   if (!alphabet) return;
