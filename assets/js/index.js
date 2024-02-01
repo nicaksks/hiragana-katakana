@@ -28,7 +28,7 @@ window.onload = async () => {
 }
 
 function redirect(query) {
-  window.location.href = `?q=${quey}`;
+  window.location.href = `?q=${query}`;
 }
 
 async function getJson() {
