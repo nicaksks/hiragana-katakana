@@ -27,6 +27,10 @@ window.onload = async () => {
   doc.train.style.display = "block";
 }
 
+function redirect(query) {
+  window.location.href = `?q=${quey}`;
+}
+
 async function getJson() {
   const response = await fetch(`./assets/json/${alphabet.toLowerCase()}.json`);
   const data = await response.json();
